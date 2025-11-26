@@ -11,7 +11,7 @@ export default defineConfig({
         hostname: 'https://vr.pbottle.com/class/docs/'
     },
     head: [
-        ['link', { rel: 'shortcut icon', href: '/docs/public/favicon.ico', type: 'image/x-icon' }],
+        ['link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }],
         ['meta', { name: 'keywords', content: '小瓶VR, VR课堂, 虚拟现实, 教学, VR教学, VR课件, 超级PPT' }],
         ['script', { type: 'text/javascript' }, `
         var _hmt = _hmt || [];
