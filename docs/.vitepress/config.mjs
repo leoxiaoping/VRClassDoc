@@ -2,13 +2,13 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-    title: "小瓶VR课堂",
-    description: "小瓶VR课 小瓶VR课堂 超级PPT课件",
+    title: "小瓶VR课堂官方文档",
+    description: "小瓶VR课堂 超级PPT课件 VR多媒体课件",
     lang: 'zh-Hans',
     lastUpdated: true,
     base: '/docs/',
     sitemap: {
-        hostname: 'https://vr.pbottle.com/class/docs/'
+        hostname: 'https://vr.pbottle.com/docs/'
     },
     head: [
         ['link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }],
