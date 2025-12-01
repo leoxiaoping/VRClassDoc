@@ -2,11 +2,13 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-    title: "小瓶VR课堂官方文档",
+    title: "小瓶®VR课堂官方文档",
     description: "小瓶VR课堂 超级PPT课件 VR多媒体课件",
     lang: 'zh-Hans',
     lastUpdated: true,
     base: '/docs/',
+    // 导航栏标题（Logo 右侧的文字）
+    siteTitle: '我的网站', // 若不需要文字，可设为 ''
     sitemap: {
         hostname: 'https://vr.pbottle.com/docs/'
     },
@@ -37,7 +39,8 @@ export default defineConfig({
         nav: [
             { text: '首页', link: '/' },
             { text: '使用指南', link: '/guide/' },
-            { text: '官方网站', link: 'https://vr.pbottle.com/' },
+            { text: '定价', link: 'https://vr.pbottle.com/' },
+            { text: '小瓶VR官站', link: 'https://vr.pbottle.com/' },
             { text: '在线客服', link: 'https://yun.pbottle.com/kefu.php' },
         ],
         sidebar: [

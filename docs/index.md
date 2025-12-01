@@ -5,16 +5,19 @@ title: 小瓶VR课堂文档
 titleTemplate: PPT快捷VR教学解决方案
 
 hero:
-  name: "小瓶VR课堂"
+  name: "小瓶®VR课堂"
   text: "PPT快速转换VR虚拟现实课件！~"
   tagline: 打造身临其境的虚拟现实课堂教学环境
+  image:
+    src: /logo.png
+    alt: 小瓶VR课堂logo图片
   actions:
     - theme: brand
       text: 使用指南
       link: /guide/
     - theme: alt
       text: 登录编辑后台
-      link: https://vr.pbottle.com/class/login
+      link: https://vr.pbottle.com/class/
 
 features:
   - title: 👓️沉浸式体验
