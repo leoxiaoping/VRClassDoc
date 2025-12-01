@@ -39,7 +39,7 @@ export default defineConfig({
         nav: [
             { text: '首页', link: '/' },
             { text: '使用指南', link: '/guide/' },
-            { text: '定价', link: 'https://vr.pbottle.com/' },
+            { text: '定价', link: '/guide/price.md' },
             { text: '小瓶VR官站', link: 'https://vr.pbottle.com/' },
             { text: '在线客服', link: 'https://yun.pbottle.com/kefu.php' },
         ],
