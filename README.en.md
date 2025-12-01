@@ -1,7 +1,11 @@
 # vrClass Documentation Center
 
+![小瓶VR课堂工作流程图](docs/public/logo.png)
+
 ## Project Overview
 vrClass is a virtual reality teaching solution designed for the education sector, offering features for creating and managing course materials. This project includes comprehensive user guides and operational documentation to help teachers quickly get started.
+
+![小瓶VR课堂工作流程图](docs/public/flow.png)
 
 ## Core Features
 - Enterprise-grade data encryption and privacy protection
