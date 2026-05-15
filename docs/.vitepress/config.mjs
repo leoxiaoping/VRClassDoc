@@ -1,21 +1,31 @@
-// docs/.vitepress/config.js
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 export default defineConfig({
-    title: "小瓶®VR课堂官方文档",
-    description: "小瓶VR课堂 超级PPT课件 VR多媒体课件",
-    lang: 'zh-Hans',
-    lastUpdated: true,
-    base: '/docs/',
-    // 导航栏标题（Logo 右侧的文字）
-    siteTitle: '我的网站', // 若不需要文字，可设为 ''
-    sitemap: {
-        hostname: 'https://vr.pbottle.com/docs/'
-    },
-    head: [
-        ['link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }],
-        ['meta', { name: 'keywords', content: '小瓶VR, VR课堂, 虚拟现实, 教学, VR教学, VR课件, 超级PPT' }],
-        ['script', { type: 'text/javascript' }, `
+  title: "小瓶®VR课堂官方文档",
+  description: "小瓶VR课堂 超级PPT课件 VR多媒体课件",
+  lang: "zh-Hans",
+  lastUpdated: true,
+  base: "/docs/",
+  siteTitle: "小瓶VR课堂", // 改为实际的站点名
+  sitemap: {
+    hostname: "https://vr.pbottle.com/docs/",
+  },
+  head: [
+    [
+      "link",
+      { rel: "shortcut icon", href: "/favicon.ico", type: "image/x-icon" },
+    ],
+    [
+      "meta",
+      {
+        name: "keywords",
+        content: "小瓶VR, VR课堂, 虚拟现实, 教学, VR教学, VR课件, 超级PPT",
+      },
+    ],
+    [
+      "script",
+      { type: "text/javascript" },
+      `
         var _hmt = _hmt || [];
           (function() {
               var hm = document.createElement("script");
@@ -23,42 +33,67 @@ export default defineConfig({
               var s = document.getElementsByTagName("script")[0];
               s.parentNode.insertBefore(hm, s);
           })();
-      `
+      `,
+    ],
+  ],
+
+  themeConfig: {
+    docFooter: {
+      prev: "上一篇",
+      next: "下一篇",
+    },
+    darkModeSwitchLabel: "外观",
+    returnToTopLabel: "返回顶部",
+    sidebarMenuLabel: "菜单",
+    outline: { label: "本页大纲", level: [2, 6] },
+    nav: [
+      { text: "首页", link: "/" },
+      { text: "使用指南", link: "/guide/" },
+      { text: "定价", link: "/guide/price" },
+      { text: "小瓶VR官站", link: "https://vr.pbottle.com/" },
+      { text: "在线客服", link: "https://yun.pbottle.com/kefu.php" },
+    ],
+    sidebar: [
+      {
+        text: "使用指南",
+        items: [{ text: "总览", link: "/guide/" }],
+      },
+      {
+        text: "后台编辑端",
+        items: [
+          { text: "素材从哪里来？", link: "/guide/backend/素材从哪里来？" },
+          { text: "登录后台", link: "/guide/backend/登录后台" },
+          { text: "上传课件", link: "/guide/backend/上传课件" },
+          { text: "上传素材", link: "/guide/backend/上传素材" },
+          { text: "管理课件", link: "/guide/backend/管理课件" },
+          { text: "管理素材", link: "/guide/backend/管理素材" },
+          {
+            text: "编辑课件-界面介绍",
+            link: "/guide/backend/编辑课件-界面介绍",
+          },
+          {
+            text: "编辑课件-添加VR元素",
+            link: "/guide/backend/编辑课件-添加VR元素",
+          },
         ],
+      },
+      {
+        text: "VR眼镜端",
+        items: [
+          { text: "安装VR应用", link: "/guide/vr/安装VR应用" },
+          { text: "登录VR应用", link: "/guide/vr/登录VR应用" },
+          { text: "浏览和打开课件", link: "/guide/vr/浏览和打开课件" },
+          { text: "操控VR课件", link: "/guide/vr/操控VR课件" },
+        ],
+      },
+      {
+        text: "定价",
+        items: [{ text: "产品定价", link: "/guide/price" }],
+      },
     ],
 
-    themeConfig: {
-        docFooter: {// 文章翻页
-            prev: '上一篇',
-            next: '下一篇'
-        },
-        darkModeSwitchLabel: '外观',    // 移动端 - 外观
-        returnToTopLabel: '返回顶部',    // 移动端 - 返回顶部
-        sidebarMenuLabel: '菜单',    // 移动端 - menu
-        outline: { label: '本页大纲', level: [2, 6] },
-        nav: [
-            { text: '首页', link: '/' },
-            { text: '使用指南', link: '/guide/' },
-            { text: '定价', link: '/guide/price.md' },
-            { text: '小瓶VR官站', link: 'https://vr.pbottle.com/' },
-            { text: '在线客服', link: 'https://yun.pbottle.com/kefu.php' },
-        ],
-        sidebar: [
-            {
-                text: '使用指南',
-                items: [
-                    { text: '小瓶VR课堂简介', link: '/guide/简介.md' },
-                    { text: '准备工作', link: '/guide/准备工作.md' },
-                    { text: '文件上传', link: '/guide/文件上传.md' },
-                    { text: '文件管理', link: '/guide/文件管理.md' },
-                    { text: '课件制作', link: '/guide/课件制作.md' },
-                    { text: '课件观看', link: '/guide/课件观看.md' },
-                ]
-            }
-        ],
-
-        socialLinks: [
-            { icon: 'gitee', link: 'https://gitee.com/pbottle/vrClass-document' }
-        ],
-    }
-})
+    socialLinks: [
+      { icon: "gitee", link: "https://gitee.com/pbottle/vrClass-document" },
+    ],
+  },
+});
