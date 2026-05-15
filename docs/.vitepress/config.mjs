@@ -50,7 +50,7 @@ export default defineConfig({
       { text: "首页", link: "/" },
       { text: "使用指南", link: "/guide/" },
       { text: "定价", link: "/guide/price" },
-      { text: "小瓶VR官站", link: "https://vr.pbottle.com/" },
+      { text: "小瓶VR官网", link: "https://vr.pbottle.com/" },
       { text: "在线客服", link: "https://yun.pbottle.com/kefu.php" },
     ],
     sidebar: [
