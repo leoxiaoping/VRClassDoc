@@ -62,6 +62,7 @@ export default defineConfig({
         text: "后台编辑端",
         items: [
           { text: "素材从哪里来", link: "/guide/backend/素材从哪里来" },
+          { text: "素材体积压缩优化", link: "/guide/backend/素材体积压缩优化" },
           { text: "登录后台", link: "/guide/backend/登录后台" },
           { text: "上传课件", link: "/guide/backend/上传课件" },
           { text: "上传素材", link: "/guide/backend/上传素材" },
